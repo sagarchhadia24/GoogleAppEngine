@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Google App Engine</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<table>
+		<tr>
+			<div>
+					<p>Logged in: - {{message}}</p>
+			</div>
+		</tr>
+
+		<tr>
+			<td>
+				<form id="formUpload" action="../uploadimage" method="post" enctype=multipart/form-data>
+				<p class='description'></p> Please upload your documents here:<br><input type = "file" name="file_upload">
+				<input type="text" class="Comment" value="" placeholder="Comments" name="Comments">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				<input type="submit" value="Submit" id="submit_file">
+				</form>
+			</td>
+			<div>
+				<p>{{output}}</p>
+			</div>
+		</tr>
+
+		<tr>
+			<td>
+				<form id ='GetMypictures' action="../getmypictures" method = 'POST' >
+					List my images: <input type="submit" value="Submit"><br><br>
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<form id = 'RemoveMyPictures' action="../removemypictures" method = 'POST' >
+					Delete my images: <input type="submit" value="Submit"><br><br>
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<form id = 'GetAllPictures' action="../getallpictures" method = 'POST' >
+					List images for all users: <input type="submit" value="Submit"><br><br>
+				</form>
+			</td>
+		</tr>
+
+		<div>
+			<h3>Name: Sagar Chhadia</h3>
+			<h3>Student ID: 3987</h3>
+			<h3>Batch: 3:30 - 5:30</h3>
+		</div>
+	</table>
+</body>
+</html>
